@@ -16,21 +16,6 @@ workflows:
         - /.*/
       branches:
         - master
-  - name: Spaceranger
-    subclass: WDL
-    publish: true
-    primaryDescriptorPath: /workflows/spaceranger/spaceranger_workflow.wdl
-    testParameterFiles:
-      - /test/dummy.json
-    authors:
-      - name: Cumulus Team
-        email: cumulus-support@googlegroups.com
-        affiliation: Genentech
-    filters:
-      tags:
-        - /.*/
-      branches:
-        - master
   - name: STARsolo
     subclass: WDL
     publish: true
